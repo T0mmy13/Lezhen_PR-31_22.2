@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:background="@color/WhiteBlue"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/rootview">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:id="@+id/image">
+
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/rating"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:hint="Enter your rating for the film"
+            android:visibility="invisible"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Show film"
+            android:textAllCaps="false"
+            android:background="@color/ButtonColor"
+            android:onClick="getResult">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film:"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Released:"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runtime:"
+            android:textSize="20sp"
+            android:id="@+id/runtime">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
